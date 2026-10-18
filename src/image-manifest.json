@@ -1,0 +1,308 @@
+{
+  "designer": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/designer-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 14428
+      },
+      {
+        "src": "/images/editorial/designer-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 24444
+      },
+      {
+        "src": "/images/editorial/designer-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 45154
+      },
+      {
+        "src": "/images/editorial/designer-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 64854
+      }
+    ]
+  },
+  "sketch": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/sketch-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 16982
+      },
+      {
+        "src": "/images/editorial/sketch-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 31064
+      },
+      {
+        "src": "/images/editorial/sketch-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 64974
+      },
+      {
+        "src": "/images/editorial/sketch-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 99176
+      }
+    ]
+  },
+  "atelier": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/atelier-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 17482
+      },
+      {
+        "src": "/images/editorial/atelier-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 29740
+      },
+      {
+        "src": "/images/editorial/atelier-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 58244
+      },
+      {
+        "src": "/images/editorial/atelier-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 86738
+      }
+    ]
+  },
+  "collection": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/collection-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 17240
+      },
+      {
+        "src": "/images/editorial/collection-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 39014
+      },
+      {
+        "src": "/images/editorial/collection-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 96946
+      },
+      {
+        "src": "/images/editorial/collection-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 160438
+      }
+    ]
+  },
+  "look-01": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/look-01-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 16396
+      },
+      {
+        "src": "/images/editorial/look-01-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 36256
+      },
+      {
+        "src": "/images/editorial/look-01-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 85826
+      },
+      {
+        "src": "/images/editorial/look-01-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 142200
+      }
+    ]
+  },
+  "look-02": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/look-02-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 7172
+      },
+      {
+        "src": "/images/editorial/look-02-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 13066
+      },
+      {
+        "src": "/images/editorial/look-02-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 25184
+      },
+      {
+        "src": "/images/editorial/look-02-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 38874
+      }
+    ]
+  },
+  "look-03": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/look-03-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 7714
+      },
+      {
+        "src": "/images/editorial/look-03-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 13008
+      },
+      {
+        "src": "/images/editorial/look-03-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 24902
+      },
+      {
+        "src": "/images/editorial/look-03-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 36896
+      }
+    ]
+  },
+  "look-04": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/look-04-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 7232
+      },
+      {
+        "src": "/images/editorial/look-04-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 12760
+      },
+      {
+        "src": "/images/editorial/look-04-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 24266
+      },
+      {
+        "src": "/images/editorial/look-04-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 37618
+      }
+    ]
+  },
+  "service": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "src": "/images/editorial/service-320.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 12136
+      },
+      {
+        "src": "/images/editorial/service-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 24280
+      },
+      {
+        "src": "/images/editorial/service-768.webp",
+        "width": 768,
+        "height": 768,
+        "bytes": 51524
+      },
+      {
+        "src": "/images/editorial/service-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 78062
+      },
+      {
+        "src": "/images/editorial/service-1254.webp",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 104924
+      }
+    ]
+  },
+  "craft": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/images/editorial/craft-320.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 12920
+      },
+      {
+        "src": "/images/editorial/craft-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 23102
+      },
+      {
+        "src": "/images/editorial/craft-768.webp",
+        "width": 768,
+        "height": 1152,
+        "bytes": 47868
+      },
+      {
+        "src": "/images/editorial/craft-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 76102
+      }
+    ]
+  }
+}

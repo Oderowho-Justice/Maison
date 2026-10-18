@@ -1,0 +1,38 @@
+{
+  "tool": "built-in image_gen",
+  "note": "Service and craft prompts are in ASSETS.md.",
+  "images": [
+    {
+      "key": "designer",
+      "prompt": "Use case: photorealistic-natural. Create a brand-new high-resolution editorial fashion photograph, NOT an enlargement of an existing image. Luxury monochrome fashion story, black and ivory clothing, natural skin texture, softly diffused light, realistic fabric detail, restrained contrast, neutral backgrounds. Portrait 2:3 composition suitable for an oval crop, subject fully inside frame with a little margin. No typography, watermark, logos, UI, border, or oval mask. An adult female atelier designer with dark hair in a neat low bun, wearing an oversized ivory white cotton shirt, seen in profile facing left, thoughtfully handling a black garment on a dress form. Three-quarter portrait from head to upper thigh. Bright white fashion studio background with out-of-focus paper patterns. Her upper body and face visible, hands at waist height. Match the candid quiet mood of a fashion design studio."
+    },
+    {
+      "key": "sketch",
+      "prompt": "Use case: photorealistic-natural. Create a brand-new high-resolution editorial fashion photograph, NOT an enlargement of an existing image. Luxury monochrome fashion story, black and ivory clothing, natural skin texture, softly diffused light, realistic fabric detail, restrained contrast, neutral backgrounds. Portrait 2:3 composition suitable for an oval crop, subject fully inside frame with a little margin. No typography, watermark, logos, UI, border, or oval mask. Close-up of a fashion designer's hands drawing a garment design with a fine black pencil on white paper. View diagonally from above. Right hand holding pencil enters from upper left, other hand rests on the paper at lower right. Fine fashion silhouette lines, no legible writing. White shirt cuffs, neutral pale grey-white atelier desktop. The hands and drawing fill the composition."
+    },
+    {
+      "key": "atelier",
+      "prompt": "Use case: photorealistic-natural. Create a brand-new high-resolution editorial fashion photograph, NOT an enlargement of an existing image. Luxury monochrome fashion story, black and ivory clothing, natural skin texture, softly diffused light, realistic fabric detail, restrained contrast, neutral backgrounds. Portrait 2:3 composition suitable for an oval crop, subject fully inside frame with a little margin. No typography, watermark, logos, UI, border, or oval mask. An adult female tailor with dark hair in a neat low bun wearing an oversized white cotton shirt, leaning toward the left and pinning the waist of a matte black garment on a dress form. View from slightly above and from her right side, her face in three-quarter profile in upper right of image, both hands working at center left. Portrait crop from head to hips. Bright ivory atelier, quiet focused craft mood."
+    },
+    {
+      "key": "collection",
+      "prompt": "Use case: ads-marketing. Original high-resolution luxury fashion lookbook photograph. Adult female fashion model, realistic natural skin and finely detailed garments. Restrained monochrome collection. Soft directional studio lighting, professional editorial photograph, no text, watermarks, logos, borders or collage. Portrait 2:3 image, balanced composition with a little headroom and side margin. A seated model with a sleek blonde bob slicked back from her face, wearing an opaque black high-neck long-sleeved structured evening dress with dramatic pointed architectural shoulders and subtle black beaded texture. Three-quarter view facing left, hands resting in lap, crop head to upper thighs. Moody charcoal grey studio backdrop and understated grey seat. Refined, sculptural, fully clothed."
+    },
+    {
+      "key": "look-01",
+      "prompt": "Use case: ads-marketing. Original high-resolution luxury fashion lookbook photograph. Adult female fashion model, realistic natural skin and finely detailed garments. Restrained monochrome collection. Soft directional studio lighting, professional editorial photograph, no text, watermarks, logos, borders or collage. Portrait 2:3 image, balanced composition with a little headroom and side margin. An adult brunette model with hair tied back neatly, turned in three-quarter profile facing left. She wears an ivory white textured double-breasted tailored jacket with round dark buttons and a matching wide belt. Head to upper thigh framing, entire head and both shoulders in frame. Black seamless studio backdrop, soft light falling from upper left reveals the woven fabric texture."
+    },
+    {
+      "key": "look-02",
+      "prompt": "Use case: ads-marketing. Original high-resolution luxury fashion lookbook photograph. Adult female fashion model, realistic natural skin and finely detailed garments. Restrained monochrome collection. Soft directional studio lighting, professional editorial photograph, no text, watermarks, logos, borders or collage. Portrait 2:3 image, balanced composition with a little headroom and side margin. An adult blonde model with a short straight bob, wearing an opaque black sleeveless high-neck halter top and a long fluid black skirt, slim layered silver necklaces. Standing frontal with arms relaxed by her sides, gaze slightly to camera left. Full length portrait, entire head and shoes visible. Light neutral grey seamless studio background and floor, softly directional fashion lighting."
+    },
+    {
+      "key": "look-03",
+      "prompt": "Use case: ads-marketing. Original high-resolution luxury fashion lookbook photograph. Adult female fashion model, realistic natural skin and finely detailed garments. Restrained black and white editorial collection. Soft directional studio lighting, professional editorial photograph, neutral grey seamless background and floor. No text, watermarks, logos, borders or collage. Portrait 2:3 image. An adult blonde model with short slicked-back hair in an opaque white flowing floor-length dress with sculptural voluminous long sleeves. She leans forward in a graceful side profile facing left, one foot supported on a plain grey cube, one hand resting near the cube, sleeves draping around her arms. Full-body composition showing entire head and long white fabric pooling lightly near her feet, generous headroom and side margins. Elegant garment-focused pose, clean white and pale grey palette."
+    },
+    {
+      "key": "look-04",
+      "prompt": "Use case: ads-marketing. Original high-resolution luxury fashion lookbook photograph. Adult female fashion model, realistic natural skin and finely detailed garments. Restrained black and white editorial collection. Soft directional studio lighting, professional editorial photograph, neutral grey seamless background and floor. No text, watermarks, logos, borders or collage. Portrait 2:3 image. An adult female model with a straight short dark bob, wearing an opaque black sculptural sleeveless waistcoat and matching fluid wide-leg black trousers, black shoes. She stands full length, one hand on hip, the other arm resting at her side, body turned slightly left, gaze toward the camera, one foot a step forward. Entire head and shoes in the frame with generous margins. Refined confident tailoring, soft dramatic studio light, charcoal and grey palette."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
+.codex/
+.agents/
+artifacts/
+assets/source/
+01 */
+02 */
+03 */
+*.log
+.DS_Store
+Thumbs.db
