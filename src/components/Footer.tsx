@@ -14,7 +14,7 @@ export function Footer() {
         <a href="#/service/care">Garment care</a>
       </nav>
       <div className={styles["footer-meta"]}>
-        <span className={styles["eyebrow"]}>BARBINO MAISON</span>
+        <span className={styles["eyebrow"]}>BELLARO MILANO</span>
         <p className={styles["footer-credit"]}>
           Built by <a href="https://astonesoft.com">Astonesoft</a>
         </p>

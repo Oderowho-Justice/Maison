@@ -29,7 +29,7 @@ export function App() {
     return () => removeEventListener("hashchange", change);
   }, []);
   useEffect(() => {
-    document.title = `Barbino Maison — ${route === "service" ? "Customer service" : route === "collection" ? "Collection" : "Philosophy"}`;
+    document.title = `Bellaro Milano — ${route === "service" ? "Customer service" : route === "collection" ? "Collection" : "Philosophy"}`;
   }, [route]);
   useEffect(() => {
     const id = hash.split("/")[2];

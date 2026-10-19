@@ -26,7 +26,7 @@ export function BrandHero({ collection = false }: { collection?: boolean }) {
     >
       <div className={styles["maison-curve"]} />
       <h2 id="maison-title" className={styles["maison-word"]}>
-        MAISON
+        MILANO
       </h2>
       <div className={styles["maison-content"] + " " + styles["wrap"]}>
         <div className={styles["maison-copy"]} data-reveal>
@@ -44,7 +44,7 @@ export function BrandHero({ collection = false }: { collection?: boolean }) {
               >
                 THE COLLECTION
                 <br />
-                BARBINO MAISON
+                BELLARO MILANO
               </span>
             </>
           ) : (

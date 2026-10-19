@@ -86,7 +86,7 @@ export function MobileMenu({
           </a>
         ))}
       </nav>
-      <p className={styles["eyebrow"]}>BARBINO MAISON · A STUDY IN CONTRAST</p>
+      <p className={styles["eyebrow"]}>BELLARO MILANO · A STUDY IN CONTRAST</p>
     </dialog>
   );
 }

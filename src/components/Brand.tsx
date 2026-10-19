@@ -11,10 +11,10 @@ export function Brand({
       className={[styles.brand, className].join(" ")}
       href="#/philosophy"
       onClick={onNavigate}
-      aria-label="Barbino Maison home"
+      aria-label="Bellaro Milano home"
     >
-      <strong>BARBINO™</strong>
-      <span>MAISON</span>
+      <strong>BELLARO™</strong>
+      <span>MILANO</span>
     </a>
   );
 }

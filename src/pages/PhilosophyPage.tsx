@@ -8,7 +8,7 @@ export function PhilosophyPage({ onLook }: { onLook: (look: Look) => void }) {
     <>
       <BrandPhilosophy />
       <div className={styles["barbino-word"]} aria-hidden="true">
-        BARBINO
+        BELLARO
       </div>
       <div className={styles["editorial"]}>
         <BrandHero />

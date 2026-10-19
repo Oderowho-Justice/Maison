@@ -1,4 +1,4 @@
-# Barbino Maison
+# Bellaro Milano
 
 A responsive editorial fashion website built with React, TypeScript, Vite and GSAP ScrollTrigger. The initial workspace contained three PNG design exports and no existing application.
 

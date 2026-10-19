@@ -26,7 +26,7 @@ export function BrandPhilosophy() {
         <span>of the brand</span>
       </h1>
       <p className={styles["intro-note"]} data-reveal>
-        Barbino Maison celebrates the woman at the centre of her own story — her
+        Bellaro Milano celebrates the woman at the centre of her own story — her
         confidence, her strength and her individuality.
       </p>
       <figure className={styles["founder"]}>
@@ -39,7 +39,7 @@ export function BrandPhilosophy() {
           <span className={styles["eyebrow"]}>
             THE ATELIER
             <br />
-            BARBINO MAISON
+            BELLARO MILANO
             <br />
             <br />
             DESIGN & EXPRESSION
@@ -58,7 +58,7 @@ export function BrandPhilosophy() {
           details into focus.
         </p>
         <p>
-          Barbino Maison is a conversation between elegance and edge. Clothes to
+          Bellaro Milano is a conversation between elegance and edge. Clothes to
           interpret in your own way, with a silhouette that feels unmistakably
           yours.
         </p>

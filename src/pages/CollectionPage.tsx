@@ -5,7 +5,7 @@ import styles from "./CollectionPage.module.css";
 export function CollectionPage({ onLook }: { onLook: (look: Look) => void }) {
   return (
     <>
-      <h1 className={styles["sr-only"]}>The Barbino Maison collection</h1>
+      <h1 className={styles["sr-only"]}>The Bellaro Milano collection</h1>
       <div className={styles["collection-page"] + " " + styles["dark"]}>
         <BrandHero collection />
         <div id="looks">
