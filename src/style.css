@@ -700,6 +700,31 @@ figure {
   gap: 30px;
   font-size: 12px;
 }
+.footer-meta {
+  flex-shrink: 0;
+  text-align: right;
+}
+.footer-credit {
+  margin: 12px 0 0;
+  color: #b9b9ac;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.footer-credit a {
+  display: inline-block;
+  padding-block: 4px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  color: var(--paper);
+  text-decoration-color: currentColor;
+}
 .menu {
   width: 100%;
   max-width: none;
@@ -1335,7 +1360,14 @@ main:focus {
     width: 100%;
     font-size: 11px;
   }
-  .footer > .eyebrow {
+  .footer-meta {
+    order: 4;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #41413b;
+    padding-top: 22px;
+  }
+  .footer-meta > .eyebrow {
     font-size: 8px;
   }
   .menu {

@@ -762,7 +762,12 @@ function Footer() {
         <a href="#/service">Customer service</a>
         <a href="#/service/care">Garment care</a>
       </nav>
-      <span className="eyebrow">BARBINO MAISON</span>
+      <div className="footer-meta">
+        <span className="eyebrow">BARBINO MAISON</span>
+        <p className="footer-credit">
+          Built by <a href="https://astonesoft.com">Astonesoft</a>
+        </p>
+      </div>
     </footer>
   );
 }
