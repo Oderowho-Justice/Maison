@@ -1,0 +1,208 @@
+.oval {
+  composes: oval from "../styles/Shared.module.css";
+}
+.wrap {
+  composes: wrap from "../styles/Shared.module.css";
+}
+.eyebrow {
+  composes: eyebrow from "../styles/Shared.module.css";
+}
+.philosophy {
+  height: 920px;
+  position: relative;
+}
+.philosophy h1 {
+  font-size: clamp(68px, 7.2vw, 120px);
+  line-height: 1.06;
+  letter-spacing: -5px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+}
+.philosophy h1 span {
+  display: block;
+}
+.philosophy h1 span + span {
+  margin-left: 49%;
+  margin-top: 16px;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+.intro-note {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 28%;
+  font-size: 14px;
+}
+.founder {
+  position: absolute;
+  left: 0.5%;
+  top: 166px;
+  width: 32%;
+}
+.founder [data-picture] {
+  aspect-ratio: 395/497;
+}
+.founder figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 38px;
+  font-size: 13px;
+}
+.founder figcaption a {
+  display: block;
+  font-size: 9px;
+  margin-top: 15px;
+}
+.philosophy-copy {
+  position: absolute;
+  left: 53%;
+  top: 365px;
+  width: 29%;
+}
+.sketch {
+  position: absolute;
+  right: -5%;
+  top: 440px;
+  width: 20%;
+  aspect-ratio: 248/296;
+}
+.closing-note {
+  position: absolute;
+  left: 50%;
+  top: 670px;
+  width: 29%;
+}
+@media (min-width: 1650px) {
+  .philosophy {
+    height: 1000px;
+  }
+  .philosophy-copy {
+    top: 420px;
+  }
+  .closing-note {
+    top: 760px;
+  }
+  .sketch {
+    top: 500px;
+  }
+}
+@media (max-width: 1100px) {
+  .philosophy {
+    height: 740px;
+  }
+  .philosophy h1 {
+    letter-spacing: -3px;
+    font-size: 7.4vw;
+  }
+  .intro-note {
+    top: 32px;
+    font-size: 12px;
+  }
+  .founder {
+    top: 135px;
+  }
+  .founder figcaption {
+    gap: 12px;
+    font-size: 11px;
+    margin-top: 25px;
+  }
+  .founder .eyebrow {
+    font-size: 8px;
+  }
+  .philosophy-copy {
+    top: 285px;
+    width: 30%;
+  }
+  .sketch {
+    top: 360px;
+  }
+  .closing-note {
+    top: 545px;
+    width: 32%;
+  }
+}
+@media (max-width: 700px) {
+  .philosophy {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 0 22px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .philosophy h1 {
+    position: static;
+    grid-column: 1/-1;
+    font-size: 13vw;
+    letter-spacing: -2.5px;
+    line-height: 1.05;
+  }
+  .philosophy h1 span + span {
+    font-size: 0.85em;
+    margin-left: 22%;
+    margin-top: 8px;
+  }
+  .intro-note {
+    position: static;
+    grid-column: 2;
+    font-size: 11px;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  .founder {
+    position: static;
+    grid-column: 1;
+    width: auto;
+    grid-row: 2/5;
+    margin-top: 35px;
+  }
+  .founder [data-picture] {
+    aspect-ratio: 395/550;
+  }
+  .founder figcaption {
+    display: block;
+    margin-top: 20px;
+    font-size: 11px;
+  }
+  .founder figcaption > span + span {
+    display: block;
+    margin-top: 20px;
+  }
+  .founder figcaption a {
+    font-size: 8px;
+    line-height: 1.4;
+  }
+  .philosophy-copy {
+    position: static;
+    grid-column: 2;
+    width: auto;
+  }
+  .philosophy-copy p {
+    font-size: 12px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .sketch {
+    position: static;
+    grid-column: 2;
+    width: 72%;
+    aspect-ratio: 248/296;
+    margin: 18px 0 0 auto;
+  }
+  .closing-note {
+    position: static;
+    grid-column: 1/-1;
+    width: 65%;
+    margin: 38px 0 0 26%;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+}
+.founder [data-picture] img {
+  object-position: center top;
+}

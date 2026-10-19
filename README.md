@@ -13,6 +13,7 @@ Open http://127.0.0.1:5173. Routes: `#/philosophy`, `#/collection`, `#/service`.
 
 ```sh
 npm run build
+npm run lint
 npm run preview
 npm run check
 ```
@@ -32,3 +33,15 @@ All visible copy is English. Biographical material was replaced with design and 
 Animations use native scrolling and scoped GSAP matchMedia/ScrollTrigger lifecycles. Reduced motion disables entrances and parallax. Native modal dialogs provide keyboard focus containment; menu closing restores focus.
 
 See `ASSETS.md` for asset provenance and generation prompts.
+
+## Source structure
+
+- `src/main.tsx` mounts React; `App.tsx` coordinates the existing hash routes and dialogs.
+- `src/pages/` composes the philosophy, collection and customer-service pages.
+- `src/components/` contains the navigation, mobile menu, footer, editorial sections, gallery and dialogs, with adjacent CSS Modules.
+- `src/data/` contains collection looks, navigation, care guidance and responsive image metadata; `src/types/` holds shared content types.
+- `src/hooks/` owns saved-look persistence; `src/utils/` contains keyboard focus handling.
+- `src/animations/gsap.ts` registers ScrollTrigger and shares reveal timing. Components create their own scoped animation contexts and revert them on unmount.
+- `src/styles/global.css` contains only fonts, tokens, resets and base styles. `Shared.module.css` supplies composed style primitives. Cascade layers keep component overrides above shared primitives, independent of bundler import order.
+
+`npm run lint` checks JavaScript, TypeScript and React hook dependencies. The browser checks also exercise footer attribution, gallery anchor navigation, repeated page/menu lifecycles and changing reduced-motion preferences.

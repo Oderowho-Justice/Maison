@@ -1,0 +1,46 @@
+.small-note {
+  composes: small-note from "../styles/Shared.module.css";
+}
+.button {
+  composes: button from "../styles/Shared.module.css";
+}
+.text-link {
+  composes: text-link from "../styles/Shared.module.css";
+}
+.detail-photo {
+  max-height: 420px;
+  height: 50vh;
+  margin-bottom: 25px;
+}
+.detail-photo img {
+  object-fit: contain;
+}
+.saved-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.saved-look {
+  padding: 0;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+}
+.saved-look img {
+  aspect-ratio: 2/3;
+}
+.saved-look span {
+  display: block;
+  margin: 14px 0;
+}
+@media (max-width: 700px) {
+  .saved-grid {
+    gap: 20px 15px;
+  }
+  .saved-look span {
+    font-size: 12px;
+  }
+  .saved-grid .text-link {
+    font-size: 9px;
+  }
+}

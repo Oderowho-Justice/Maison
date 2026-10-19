@@ -1,0 +1,79 @@
+.eyebrow {
+  composes: eyebrow from "../styles/Shared.module.css";
+}
+.menu-toggle {
+  composes: menu-toggle from "../styles/Shared.module.css";
+}
+.menu {
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: 65px 7%;
+  background: var(--ink);
+  color: var(--paper);
+}
+.menu::backdrop {
+  background: #191917;
+}
+.menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .menu-toggle {
+  background: var(--paper);
+  color: var(--ink);
+}
+.menu nav {
+  margin: 12vh 0;
+}
+.menu-link {
+  display: flex;
+  align-items: baseline;
+  gap: 35px;
+  font-size: clamp(38px, 6vw, 90px);
+  letter-spacing: -2px;
+  padding: 20px 0;
+  border-bottom: 1px solid #55554e;
+}
+.menu-link small {
+  font-size: 12px;
+  letter-spacing: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.menu-link > span {
+  margin-left: auto;
+}
+.menu-link[aria-current="page"] {
+  color: #b9b9ac;
+}
+@media (max-width: 700px) {
+  .menu {
+    padding: 35px 6%;
+  }
+  .menu-link {
+    font-size: 38px;
+    letter-spacing: -1.5px;
+    gap: 12px;
+    padding: 25px 0;
+  }
+  .menu-link small {
+    font-size: 9px;
+  }
+  .menu-link > span {
+    font-size: 25px;
+  }
+  .menu nav {
+    margin: 13vh 0;
+  }
+  .menu-link {
+    overflow-wrap: anywhere;
+  }
+  .menu-link > span {
+    flex-shrink: 0;
+  }
+}

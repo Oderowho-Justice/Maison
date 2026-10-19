@@ -24,6 +24,13 @@ try {
         Promise.all([...document.images].map((i) => i.decode())),
       );
       assert.equal(await page.locator("h1").count(), 1, `${route}: one h1`);
+      assert.equal(
+        await page
+          .getByRole("link", { name: "Astonesoft", exact: true })
+          .getAttribute("href"),
+        "https://astonesoft.com",
+        "Footer credit preserves the Astonesoft link",
+      );
       const metrics = await page.evaluate(() => ({
         width: innerWidth,
         scroll: document.documentElement.scrollWidth,
@@ -45,12 +52,15 @@ try {
         `${route}: all photographs have responsive sources`,
       );
       if (route !== "service") {
-        const first = await page.locator(".look").first().boundingBox();
+        const first = await page.locator("[data-look]").first().boundingBox();
         assert.ok(
           first.x >= 0 && first.x + first.width <= width,
           `${route} at ${width}: look 01 is completely visible`,
         );
-        const label = await page.locator(".look-caption").first().boundingBox();
+        const label = await page
+          .locator("[data-look-caption]")
+          .first()
+          .boundingBox();
         assert.ok(
           label.x >= 0 && label.x + label.width <= width,
           `${route}: look 01 caption is completely visible`,
@@ -94,18 +104,26 @@ try {
     await page.waitForURL("**/#/collection");
     await page.getByRole("button", { name: "Next looks" }).click();
     assert.ok(
-      (await page.locator(".lookbook-track").evaluate((el) => el.scrollLeft)) >
-        0,
+      (await page
+        .locator("[data-lookbook-track]")
+        .evaluate((el) => el.scrollLeft)) > 0,
       "Lookbook advances",
     );
     await page.getByRole("button", { name: "Previous looks" }).click();
     const firstAfterPrevious = await page
-      .locator(".look")
+      .locator("[data-look]")
       .first()
       .boundingBox();
     assert.ok(
       firstAfterPrevious.x >= -1,
       "Previous control restores the whole first card",
+    );
+    await page.getByRole("link", { name: "VIEW THE LOOKBOOK" }).click();
+    await page.waitForURL("**/#/collection/looks");
+    await page.waitForTimeout(150);
+    assert.ok(
+      (await page.locator("#looks").boundingBox()).y < 100,
+      "Lookbook link scrolls to the gallery",
     );
     await page
       .getByRole("button", { name: "View look 1: Soft structure" })
@@ -178,6 +196,32 @@ try {
     path: "artifacts/philosophy-motion-390.png",
     fullPage: true,
   });
+  for (const route of ["service", "collection", "philosophy", "service"]) {
+    await page.evaluate((route) => {
+      location.hash = `#/${route}`;
+    }, route);
+    await page.waitForTimeout(350);
+    await page.getByRole("button", { name: "MENU +", exact: true }).click();
+    await page.getByRole("button", { name: "CLOSE" }).click();
+    await page.getByRole("dialog").waitFor({ state: "hidden" });
+    assert.equal(await page.evaluate(() => document.body.style.overflow), "");
+  }
+  await page
+    .getByRole("button", { name: "Read about the making of a garment" })
+    .click();
+  await page.getByRole("dialog").waitFor({ state: "visible" });
+  await page.getByRole("button", { name: "Close dialog" }).click();
+  await page.getByRole("dialog").waitFor({ state: "hidden" });
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  assert.equal(
+    await page
+      .locator("[data-parallax] img")
+      .evaluateAll((images) =>
+        images.every((image) => getComputedStyle(image).transform === "none"),
+      ),
+    true,
+    "Changing reduced-motion preference reverts parallax",
+  );
   assert.deepEqual(errors, []);
   await writeFile(
     "artifacts/checks.json",

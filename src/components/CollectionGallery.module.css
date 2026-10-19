@@ -1,0 +1,206 @@
+.wrap {
+  composes: wrap from "../styles/Shared.module.css";
+}
+.lookbook {
+  padding-top: 95px;
+  padding-bottom: 90px;
+}
+.lookbook-track {
+  display: flex;
+  gap: 46px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  padding: 0 0 0 0;
+}
+.lookbook-track::-webkit-scrollbar {
+  display: none;
+}
+.look {
+  flex: 0 0 27.5%;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+  text-align: left;
+  scroll-snap-align: center;
+}
+.look:first-child {
+  margin-left: 7%;
+}
+.look:last-child {
+  margin-right: 7%;
+}
+.look [data-picture] {
+  aspect-ratio: 394/594;
+}
+.look img {
+  transition: transform 0.6s;
+}
+.look:hover img {
+  transform: scale(1.025);
+}
+.look-caption {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 2px 5px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+.collection-notes {
+  display: grid;
+  grid-template-columns: 36% 44%;
+  justify-content: space-between;
+  padding-top: 130px;
+}
+.collection-notes h2 {
+  margin-bottom: 58px;
+}
+.collection-notes p {
+  max-width: 370px;
+}
+.gallery-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.gallery-controls {
+  display: flex;
+  background: var(--muted);
+  border-radius: 40px;
+  padding: 7px;
+}
+.gallery-controls button {
+  display: grid;
+  place-items: center;
+  background: transparent;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.gallery-controls button:hover {
+  background: #494941;
+}
+.gallery-progress {
+  width: 115px;
+  height: 1px;
+  background: #555;
+  margin-top: 18px;
+  position: relative;
+}
+.gallery-progress span {
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  background: var(--paper);
+  transition: left 0.3s;
+}
+.season {
+  position: relative;
+  width: 320px;
+  height: 245px;
+  margin-top: 125px;
+}
+.season > span {
+  font-size: 220px;
+  letter-spacing: -25px;
+  line-height: 1;
+  color: #53534d;
+  font-weight: 300;
+}
+.season > div {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 220px;
+  height: 260px;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+.season small {
+  font-size: 9px;
+  margin-top: 15px;
+}
+@media (max-width: 1100px) {
+  .lookbook {
+    padding-top: 70px;
+  }
+  .lookbook-track {
+    gap: 32px;
+  }
+  .collection-notes {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 700px) {
+  .lookbook {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .lookbook-track {
+    gap: 18px;
+  }
+  .look {
+    flex-basis: 64%;
+  }
+  .look:first-child {
+    margin-left: 6%;
+  }
+  .look-caption {
+    font-size: 9px;
+    padding-top: 12px;
+  }
+  .collection-notes {
+    padding-top: 65px;
+    grid-template-columns: 1fr 38%;
+    gap: 20px;
+  }
+  .collection-notes h2 {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+  .collection-notes p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .gallery-controls {
+    padding: 3px;
+  }
+  .gallery-controls button {
+    width: 40px;
+    height: 40px;
+  }
+  .gallery-progress {
+    width: 85px;
+  }
+  .season {
+    width: 130px;
+    height: 190px;
+    margin-top: 90px;
+  }
+  .season > span {
+    font-size: 120px;
+    letter-spacing: -16px;
+    position: absolute;
+    left: -30px;
+    top: 15px;
+  }
+  .season > div {
+    width: 115px;
+    height: 155px;
+    font-size: 24px;
+  }
+  .season small {
+    font-size: 6px;
+  }
+}
+.look:first-child [data-picture] img,
+.look:last-child [data-picture] img {
+  object-position: center;
+}

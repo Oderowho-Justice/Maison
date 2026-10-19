@@ -1,0 +1,121 @@
+.text-link {
+  composes: text-link from "../styles/Shared.module.css";
+}
+.eyebrow {
+  composes: eyebrow from "../styles/Shared.module.css";
+}
+.wrap {
+  composes: wrap from "../styles/Shared.module.css";
+}
+.small-note {
+  composes: small-note from "../styles/Shared.module.css";
+}
+.service-information {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  max-width: 760px;
+}
+.service-information h2 {
+  margin-bottom: 28px;
+}
+.service-information p {
+  max-width: 670px;
+  margin: 0 auto 24px;
+}
+.care-section {
+  display: grid;
+  grid-template-columns: 40% 48%;
+  justify-content: space-between;
+  border-top: 1px solid #cdcdc7;
+  padding-block: 80px 110px;
+}
+.care-section h2 {
+  font-size: 50px;
+  margin: 25px 0 40px;
+}
+.care-section p {
+  max-width: 370px;
+  line-height: 1.4;
+}
+.care-accordions details {
+  border-bottom: 1px solid #b9b9b1;
+  padding: 25px 0;
+}
+.care-accordions summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  min-height: 30px;
+}
+.care-accordions summary::-webkit-details-marker {
+  display: none;
+}
+.care-accordions summary span {
+  font-size: 25px;
+}
+.care-accordions details[open] summary span {
+  transform: rotate(45deg);
+}
+.care-accordions details p {
+  margin-top: 25px;
+  max-width: 100%;
+}
+.contact-section {
+  padding-bottom: 120px;
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 52px;
+  margin: 25px 0;
+}
+.contact-section p {
+  max-width: 590px;
+  margin: 30px auto;
+  line-height: 1.4;
+}
+@media (max-width: 700px) {
+  .service-information {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .service-information h2 {
+    font-size: 28px;
+  }
+  .service-information p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .service-information .small-note {
+    font-size: 11px;
+  }
+  .care-section {
+    grid-template-columns: 1fr;
+    padding-block: 50px 70px;
+  }
+  .care-section h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .care-accordions {
+    margin-top: 10px;
+  }
+  .care-accordions summary {
+    font-size: 20px;
+  }
+  .care-accordions p {
+    font-size: 13px;
+  }
+  .contact-section {
+    padding-bottom: 70px;
+  }
+  .contact-section h2 {
+    font-size: 36px;
+  }
+  .contact-section p {
+    font-size: 13px;
+  }
+}

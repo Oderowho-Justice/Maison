@@ -42,7 +42,7 @@ for (const name of names) {
   manifest[name] = { width: info.width, height: info.height, variants };
 }
 await writeFile(
-  "src/image-manifest.json",
+  "src/data/image-manifest.json",
   JSON.stringify(manifest, null, 2) + "\n",
 );
 console.log(

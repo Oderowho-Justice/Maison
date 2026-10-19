@@ -4,7 +4,7 @@
 
 All photographs used by the site were created with the built-in image-generation tool. The supplied Figma exports informed subject, pose, lighting and composition; their blurry photographic crops are no longer served. These are original editorial interpretations, not exact reproductions or verified photographs of the brand's products, staff or facilities.
 
-Production paths: `public/images/editorial/{name}-{width}.webp`, with widths recorded in `src/image-manifest.json`. Original masters: `assets/source/{name}.png` (local, excluded from Git). All sources are at least 1000 pixels on each side. The optimizer resizes downward only, preserves proportions and encodes WebP at quality 86. No watermarks or baked-in interface text are intentionally included.
+Production paths: `public/images/editorial/{name}-{width}.webp`, with widths recorded in `src/data/image-manifest.json`. Original masters: `assets/source/{name}.png` (local, excluded from Git). All sources are at least 1000 pixels on each side. The optimizer resizes downward only, preserves proportions and encodes WebP at quality 86. No watermarks or baked-in interface text are intentionally included.
 
 Names: `designer`, `sketch`, `atelier`, `collection`, `look-01`, `look-02`, `look-03`, `look-04`, `service`, `craft`.
 

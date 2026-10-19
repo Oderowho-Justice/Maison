@@ -1,0 +1,32 @@
+.barbino-word {
+  font-family: Editorial, "Times New Roman", serif;
+  font-size: 18.4vw;
+  font-optical-sizing: auto;
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.7vw;
+  text-align: center;
+  padding-right: 2%;
+  white-space: nowrap;
+}
+.editorial {
+  composes: dark from "../styles/Shared.module.css";
+  background: linear-gradient(
+    to bottom,
+    var(--paper) 0 190px,
+    var(--ink) 190px
+  );
+}
+@media (max-width: 700px) {
+  .barbino-word {
+    font-size: 18.2vw;
+    line-height: 1.05;
+  }
+  .editorial {
+    background: linear-gradient(
+      to bottom,
+      var(--paper) 0 80px,
+      var(--ink) 80px
+    );
+  }
+}

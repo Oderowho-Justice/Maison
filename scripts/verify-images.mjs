@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import sharp from "sharp";
 import { readFile } from "node:fs/promises";
-const manifest = JSON.parse(await readFile("src/image-manifest.json", "utf8"));
+const manifest = JSON.parse(await readFile("src/data/image-manifest.json", "utf8"));
 assert.equal(Object.keys(manifest).length, 10);
 let files = 0,
   bytes = 0;

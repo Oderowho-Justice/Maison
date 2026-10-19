@@ -1,0 +1,14 @@
+.dark {
+  composes: dark from "../styles/Shared.module.css";
+}
+.sr-only {
+  composes: sr-only from "../styles/Shared.module.css";
+}
+.collection-page {
+  background: linear-gradient(var(--paper) 0 175px, var(--ink) 175px);
+}
+@media (max-width: 700px) {
+  .collection-page {
+    background: linear-gradient(var(--paper) 0 80px, var(--ink) 80px);
+  }
+}
